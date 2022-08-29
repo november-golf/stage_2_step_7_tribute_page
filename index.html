@@ -1,12 +1,201 @@
-<!DOCTYPE html>
 
 <html>
-  <head>
-    <title>My awesome tribute page mofos</title>
-    <!-- The line below links your html document to your css stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Copy and paste your HTML from CodePen into here -->
-  </body>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<section id="navsec">
+    
+    <!-- Nav bar -->
+    
+    <nav id="navbar" class="nav">
+        <div class="nav-list">
+          
+            <a href="#tribute-info">Recipes</a>
+            <a href="#form-section">Share your recipes</a>
+          
+        </div>
+    </nav>
+</section>
+
+<main id="main">
+    
+    
+  
+    <!-- End of Nav bar -->
+
+    <div id="content"></div>
+    <div id="page-title" class="black-card">
+        
+        <div id="img-div"> 
+            <img id="image" class="main-image" src="https://www.feastingathome.com/wp-content/uploads/2019/02/Peanut-Tofu-Bali-Bowls-113.jpg" alt="A Peanut and Tofu Bali Bowl from feastingathome.com">
+            
+              <figcaption id="img-caption">A Peanut and Tofu Bali Bowl (©feastingathome.com).
+              </figcaption>
+            <div class="text-overlay">
+                <h1 id="title-overlay">Vegan Food From Around The World </h1>
+                <p class="info-overlay">Travel the World of healthy flavours with lesser-known cultural recipes from across the globe.</p>
+            </div>
+          </div>
+    
+    </div>
+
+    
+  
+    <section id="tribute-info">
+        <h2 id="intro-title" style="text-align: center;">All Recipes: </h2>
+        <div class="recipe-cards">
+            
+            <div class="recipe-card recipecard-1">
+                
+                <a class="tribute-link" href="https://www.feastingathome.com/bali-bowls-with-peanut-tofu/" target="_blank"> Bali | Indonesia || A Peanut and Tofu Bali Bowl </a>
+           
+            </div>
+            <div class="recipe-card recipecard-2">
+                
+                <a class="tribute-link" href="https://www.feastingathome.com/african-peanut-soup/" target="_blank"> West Africa || African Peanut Soup </a>
+           
+            </div>
+            <div class="recipe-card recipecard-3">
+                
+                <a class="tribute-link" href="https://lovingitvegan.com/vegan-dumplings/" target="_blank">Japan || Vegan GYOZA!</a>
+           
+            </div>
+            <div class="recipe-card recipecard-4">
+                
+                <a class="tribute-link" href="https://www.theiranianvegan.com/recipes/borani-bademjan-vegan-persian-aubergine-tomato-and-garlic" target="_blank"> Iran | Persian || BORANI BADEMJAN. </a>
+           
+            </div>
+
+            <div class="recipe-card recipecard-5">
+                
+                <a class="tribute-link" href="https://www.theiranianvegan.com/recipes/vegan-shola-ghorbandi-afghani-afghan-sticky-mung-bean-rice-with-tomato-and" target="_blank"> Afghanistan || Shola Ghorbandi Afghani. </a>
+           
+            </div>
+            <div class="recipe-card recipecard-6">
+                
+                <a class="tribute-link" href="https://www.quorn.co.uk/recipes/vegan-laksa" target="_blank">Penang | Malaysia || Laksa.  </a>
+           
+            </div>
+            <div class="recipe-card recipecard-7">
+                
+                <a class="tribute-link" href="https://www.gimmesomeoven.com/vegetarian-vegan-pho-recipe/" target="_blank">Hanoi | Vietnam || Pho. </a>
+           
+            </div>
+            <div class="recipe-card recipecard-8">
+                
+                <a class="tribute-link" href="https://www.feastingathome.com/peruvian-burritos/" target="_blank">Lima || Peruvian Burritos. </a>
+           
+            </div>
+            <div class="recipe-card recipecard-9">
+                
+                <a class="tribute-link" href="https://www.onegreenplanet.org/vegan-recipe/pastel-de-choclo/" target="_blank">Santiago | Chile || Pastel De Choclo.  </a>
+           
+            </div>
+            <div class="recipe-card recipecard-10">
+                
+                <a class="tribute-link" href="https://www.makingthymeforhealth.com/vegan-mushroom-bourguignon-2/" target="_blank">Burgundy | France || Champignon Bourguignon  </a>
+           
+            </div>
+
+            
+        </div>
+    
+      
+    </section>
+
+
+
+    <!--Submit your recipes --> 
+    <section id="form-section" style="text-align: center;">
+        <div class="section-header">
+            <h1 id="title">Submit your recipes!</h1>
+        
+            <p id="description">
+            Share your global vegan and vegetarian recipes here:</p>
+        </div>
+
+        <form id="survey-form">
+
+
+
+            <!--Recipe Details -->       
+                <h3 id="recipe-details">Recipe details:</h3>
+
+            <!--Recipe Name -->       
+                <label id="recipe-label" for="recipe-name">The recipe I'm sharing is called:</label><br>
+                <input id="recipe-name" type="text" placeholder="eg. Dal Makhani" required><br><br>
+
+            <!--Recipe Origin -->       
+                <label id="recipe-origin-label" for="recipe-origin">It's comes from:</label><br>
+                <input id="recipe-origin" class="form-inputs" type="text" placeholder="eg. Northern India" required>
+            
+                <select name="continent" id="dropdown" class="form-inputs">
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="n-america">North America</option>
+                    <option value="s-america">South America</option>
+                    <option value="aus">Australasia</option>
+                </select> 
+
+            <!--Dietary information -->       
+                <h3 id="dietary-information">Dietary info:</h3>
+            
+            
+            <!--Vegan-friendly -->       
+                <input id="vegan-friendly" class="form-inputs" type="checkbox" value="vegan-friendly">
+                <label id="recipe-origin-label" for="recipe-origin">Vegan-friendly</label>
+
+            <!--Gluten-free -->      
+                <input id="gluten-free" class="form-inputs" type="checkbox" value="gluten-free">
+                <label id="recipe-origin-label" for="recipe-origin">Gluten-free</label>
+
+            <!--Contains nuts -->       
+                <input id="contains-nuts" class="form-inputs" type="checkbox" value="contains-nuts">
+                <label id="recipe-origin-label" for="recipe-origin">Contains nuts</label>
+
+            <!--Kosher -->      
+                <input id="kosher" class="form-inputs" type="checkbox" value="Kosher">
+                <label id="Kosher-label" for="kosher">Kosher</label>
+
+            <!--Halal -->      
+                <input id="halal" class="form-inputs" type="checkbox" value="gluten-free">
+                <label id="halal-label" for="halal">Halal</label><br>
+            
+        
+            <!--Contributor information -->
+                <h3 id="contributor-information">Your info:</h3>    
+                <label id="name-label" for="name">My name is:</label><br>
+                    <input id="name" class="form-inputs" type="text" placeholder="eg. Gaz Oakley" required><br><br>
+                    <label id="email-label" for="email">My email is:</label><br>
+                    <input id="email" class="form-inputs" type="email" placeholder="eg. g.oak@gmail.com" required><br><br>
+                    <label id="number-label" for="number">My number is:</label><br>
+                    <input id="number" class="form-inputs" type="number" placeholder="07825665731" required><br>
+
+            <!--Other information -->
+                <h3 id="other-information-title">Any other information about your recipe:</h3>
+                <textarea id="other-information" form="survey-form" placeholder="Any other information about your recipe? eg. History, tradition, or anything else?" style="padding: 0rem 2rem 2rem 2rem;"></textarea><br><br>
+
+                    <input type="radio" id="mail-consent" class="form-inputs" name="content-permission" value="permission-granted" checked="checked">
+                    <label for="content-permission">Send me new recipes every week!</label>
+                    <input type="radio" id="no-mail-consent" class="form-inputs" name="content-permission" value="permission-granted">
+                    <label for="content-permission-only">Don't email me with delicious food.</label><br><br>
+                    
+            
+
+            <input id="submit" class="form-inputs" type="submit" value="Submit">
+        
+
+        </form>
+    </section> 
+    <section id="footer">
+        <p> // Let thy food be thy medicine, and thy medicine be thy food //</p>
+    </section> 
+</main>
+</body>
+
 </html>

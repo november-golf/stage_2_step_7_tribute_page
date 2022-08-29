@@ -1,1 +1,267 @@
-/* Copy and paste your CSS from CodePen into here */
+div {
+  position: relative;
+}
+
+#navsec {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  left: 0:
+
+}
+
+body {
+    font-family: open sans;
+    background-image: linear-gradient(to top, #31794d, #40964e, #5ab348, #7dd038, #a8eb12);
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: auto;
+
+    
+  }
+
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: #31794d;
+  padding: 10px 3px 10px 3px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
+  float: left;
+
+
+}
+
+#navbar a {
+  color:rgba(238, 240, 238, 1);
+}
+
+main {
+  background-color: rgba(235, 229, 229, 0.65);
+  position: relative;
+}
+
+
+#title {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 39px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #FFFFFB;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  }
+  
+@media screen and (max-width: 500px) {
+    .main-image {
+      
+    }
+
+}    
+  
+
+.main-image {
+    max-width: 100%;
+    height: auto;  
+  }
+
+
+.text-overlay {
+  position: absolute;
+  top: 2%;
+  background-color: rgba(24, 28, 25, 0.3);
+  margin: 4.7rem 25% 0% 25%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.black-card {
+  
+  background-image: url("https://cdn.pixabay.com/photo/2018/04/04/12/43/bamboo-3289692_1280.jpg");
+  background-color: rgba(24, 28, 25, 1);
+  box-shadow: inset 0 0 0 1000px rgba(136, 205, 119, 0.5);
+  text-align: center;
+}
+
+.tribute-link {
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgba(238, 240, 238, 1);
+  text-shadow: 4px 4px 20px rgb(13, 13, 13);
+  
+}
+
+
+.recipe-cards {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 1rem;
+}
+
+
+.recipe-card {
+  background-color: #FFFFFB;
+  padding: 3em;  
+}
+
+
+.recipecard-1 {
+  background-image: url("https://www.feastingathome.com/wp-content/uploads/2019/02/Peanut-Tofu-Bali-Bowls-113.jpg");
+  background-size: 100%;
+  background-position: 20%;
+  align-self: baseline;
+}
+
+
+.recipecard-2 {
+  background-image: url("https://thehappyfoodie.co.uk/wp-content/uploads/2021/08/african-peanut-stew-rachel-ama-d96b71d5-2fe0-418c-9da0-7541278fb2bd_s900x0_c5304x3097_l0x2941.jpg");
+  background-size: 150%;
+  background-position: 20%;
+
+}
+
+.recipecard-3 {
+  background-image: url("https://lovingitvegan.com/wp-content/uploads/2021/09/Vegan-Potstickers-55.jpg");
+  background-size: 100%;
+  background-position: 20%;
+
+}
+
+.recipecard-4 {
+  background-image: url("https://www.theiranianvegan.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fmucdmvfhn5wx%2F4fcva44HPWIMVnAdpSfuw1%2Fca9d35012101398b459378b160783d85%2FWhatsApp_Image_2022-06-02_at_11.46.11_AM.jpeg&w=1920&q=75");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+}
+
+.recipecard-5 {
+  background-image: url("https://www.theiranianvegan.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fmucdmvfhn5wx%2FjvLGeL1LcMECibYGd1dfU%2Fef2a4d40e19c7159123646121aab2094%2FWhatsApp_Image_2021-10-18_at_16.55.13.jpeg&w=1920&q=75");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+}
+
+.recipecard-6 {
+  background-image: url("https://images.ctfassets.net/uexfe9h31g3m/57JtpMpxlf5LdGf7OCZSgJ/fbb2547b1f9fb1cf9ae6722d0d74013a/Laksa_copy.jpg?w=1024&h=768&fm=webp&fit=thumb&q=90");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+
+}
+
+.recipecard-7 {
+  background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2019/10/Vegetarian-Vegan-Pho-Recipe-7.jpg");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+
+}
+
+.recipecard-8 {
+  background-image: url("https://www.feastingathome.com/wp-content/uploads/2019/06/Peruvian-Burritos-with-Aji-Verde-Sauce-29-1024x1536.jpg");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+
+}
+
+.recipecard-9 {
+  background-image: url("https://149366112.v2.pressablecdn.com/wp-content/uploads/2017/08/smith-daughters_pastel-de-choclo.jpg");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+
+}
+
+.recipecard-10 {
+  background-image: url("https://www.makingthymeforhealth.com/wp-content/uploads/2016/02/Vegan-Mushroom-Bourguignon.jpg");
+  background-color: rgba(24, 28, 25, 1);
+  background-size: 100%;
+  background-position: 20%;
+
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: rgba(234, 236, 233, 0.5); 
+ }
+
+
+/*#image {
+    align: center;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    border: 25px solid #5554
+      
+  }
+  
+  #img-caption {
+    padding: 12px 0px 0px 0px;
+    margin: 0px 0px 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #orange;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000000;
+    
+        
+    }*/
+  
+label {
+  float: ;
+  
+}
+  
+input {
+  float: ;
+  position: ;
+
+}
+
+#survey-form {
+  margin: 2rem auto 0rem auto;
+  max-width: 100%;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: rgba(24, 28, 25, 0.8);
+  border: 5px solid rgb(107, 117, 102);
+  display: flexbox;
+  
+  
+
+}
+
+.form-input {
+  
+}
+
+#form-section {
+  background-color: rgba(83, 74, 74, 0.65);
+  padding-top: 2px;
+}
+
+#footer {
+  background-color: rgb(13, 13, 13);
+  margin: 0rem 0rem 0rem 0rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2em;
+  color:#5ab348;
